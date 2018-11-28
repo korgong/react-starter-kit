@@ -7,7 +7,7 @@
     "dev": "rimraf dist && node server.js",
     "test": "cross-env NODE_ENV=test mocha",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
-    "build": "rimraf dist && webpack --progress --colors -p --config webpack.config.production.js"
+    "start": "rimraf dist && webpack --progress --colors -p --config webpack.config.production.js && cd dist && anywhere"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
