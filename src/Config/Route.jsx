@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import loadFrom from 'bundle-loader?lazy!../Component/From'; // 表单组件
 import loadComment from 'bundle-loader?lazy!../Component/Comment'; // 评论组件
 import loadLike from 'bundle-loader?lazy!../Containers/LikeContainer'; // 状态 Like组件
-import loadTodoList from 'bundle-loader?lazy!../Containers/TodoListContainer'; // TodoList组件
+import loadTodoList from '../Containers/TodoListContainer'; // TodoList组件
 import NotFoundPage from '../Component/NotFoundPage'; // NotFoundPage
 // // 同步加载
 import Home from '../Component/App'; // 首页组件
@@ -33,7 +33,7 @@ const RouteConfig = () => (
         <Route path="/from" component={createComponent(loadFrom)} />
         <Route path="/comment" component={createComponent(loadComment)} />
         <Route path="/like" component={createComponent(loadLike)} />
-        <Route path="/list" component={createComponent(loadTodoList)} />
+        <Route path="/list" component={loadTodoList} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

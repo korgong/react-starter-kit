@@ -5,8 +5,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer'); // 自动加前缀的插件
 
 module.exports = {
-  devtool: false,
-  mode: 'production', // 会将 process.env.NODE_ENV 的值设为 production。
+  devtool: 'source-map',
+  mode: 'development', // 会将 process.env.NODE_ENV 的值设为 production。
   // 启用 FlagDependencyUsagePlugin, FlagIncludedChunksPlugin, ModuleConcatenationPlugin,
   // NoEmitOnErrorsPlugin, OccurrenceOrderPlugin, SideEffectsFlagPlugin 和 UglifyJsPlugin.
   entry: {
