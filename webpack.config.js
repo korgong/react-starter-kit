@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // publicPath 用来定义静态资源的引用地址
 module.exports = {
   cache: true,
+  devtool: 'source-map',
   mode: 'development', // 会将 process.env.NODE_ENV 的值设为 development。
   // 启用 NamedChunksPlugin(） 和  NamedModulesPlugin()
   entry: {
@@ -137,7 +138,6 @@ module.exports = {
     },
   },
   plugins: [
-
   // 开启全局的模块热替换(HMR)
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({

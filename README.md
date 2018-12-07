@@ -10,6 +10,15 @@ react-starter-kit
 更新日志
 --------
 
+20181207
+--------
+
+-	开发命令： npm run dev    生产命令： npm start
+-	http://localhost:3000/list
+
+> 说明： 终于有点时间梳理下webpack+react项目
+--------
+
 20180725
 --------
 
@@ -165,7 +174,7 @@ $ npm run build
 ```
 react-starter-kit/
 ├─src                 // 源文件目录
-│  ├─Action     
+│  ├─Action
 │  ├─Assets           // 图片资源
 │  ├─Component
 │  │  └─Common
