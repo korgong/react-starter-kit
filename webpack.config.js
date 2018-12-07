@@ -25,6 +25,7 @@ module.exports = {
 
       // 我们 app 的入口文件
       './index.jsx',
+      // './simpleReact.jsx',
 
     ],
     vendor: ['react', 'react-dom'],
@@ -48,7 +49,8 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: [
-          'babel-loader?cacheDirectory', 'eslint-loader',
+          // 'babel-loader?cacheDirectory', 'eslint-loader',
+          'babel-loader?cacheDirectory',
         ],
         exclude: /node_modules/,
       },
