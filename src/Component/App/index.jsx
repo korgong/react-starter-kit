@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button, Pagination, Cascader } from 'antd';
 
 import style from './index.less';
-
-/* eslint-disable */
 import logo from '~/assets/yay.jpg';
-/* eslint-disable */
 
 const options = [{
   value: 'zhejiang',
@@ -43,7 +40,6 @@ function onChange(value) {
 
 // class App extends Component {
 function App() {
-  const name = 'youcai';
   return (
     <div className={style.app}>
       <h1>this is a title</h1>

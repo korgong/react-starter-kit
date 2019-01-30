@@ -14,6 +14,7 @@ console.log(`当前环境为:${process.env.NODE_ENV}`);
 store.subscribe(() => {
   // console.log(store.getState());
 });
+// console.log('store is ', store);
 
 ReactDOM.render(
   <Provider store={store}>

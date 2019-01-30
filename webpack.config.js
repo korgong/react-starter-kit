@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     cache: true,
     devtool: 'source-map',
-    mode: 'development', // 会将 process.env.NODE_ENV 的值设为 development。
+    mode: 'development', // 会将 process.env.NODE_ENV 的值设为 development。production
     // 启用 NamedChunksPlugin(） 和  NamedModulesPlugin()
     entry: {
         index: [
@@ -44,6 +44,7 @@ module.exports = {
         chunkFilename: '[name].[chunkhash].js',
     },
 
+    // 基础目录，绝对路径，用于从配置中解析入口起点(entry point)和 loader
     context: `${__dirname}/src`,
     module: {
         rules: [
@@ -125,6 +126,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['.jsx', '.js', '.less', '.json'],
+        // 模块中的~的指向
         alias: {
             '~': `${__dirname}/src`,
         },

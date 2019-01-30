@@ -16,4 +16,5 @@ import Main from '../Component/TodoList';
 //   return <TodoList {...props} />;
 // }
 
+// mapStateToProps, mapDispatchToProps
 export default connect(state => ({ TodoList: state.TodoList }), TodoListAction)(Main); // 连接redux

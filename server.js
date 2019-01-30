@@ -26,8 +26,8 @@ server.app.use('/api/*', proxy({
 }));
 
 // 将其他路由，全部返回index.html
-server.app.get('*', (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
-});
+// server.app.get('*', (req, res) => {
+//   res.sendFile(`${__dirname}/index.html`);
+// });
 
 server.listen(3000);
