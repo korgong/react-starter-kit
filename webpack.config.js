@@ -26,6 +26,7 @@ module.exports = {
       // 我们 app 的入口文件
       './index.jsx',
       // './simpleReact.jsx',
+      // './simpleStore.jsx',
 
     ],
     vendor: ['react', 'react-dom'],
